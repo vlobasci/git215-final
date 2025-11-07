@@ -1,0 +1,361 @@
+/* CSS reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Begin Styles */
+
+:root {
+	--med-blue: #2A4B6E;
+	--lt-blue: #6CB5E8;
+	--gold: #E6B422;
+	--red: #D21B1B;
+	--lt-gray: #F1F1F1;
+	--white: #FFFFFF;
+	--dk-gray: #2B2B2B;
+}
+
+/* includes padding and borders in declared width to prevent strange overflow issue */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.active-link {
+	border-bottom: 9px solid var(--lt-gray);
+}
+
+.hero {
+	display: block;
+	margin: 0 auto;
+}
+
+.highlight-div {
+	margin: auto;
+	padding: 0 4rem 0 1rem;
+}
+
+.highlight-section {
+	display: flex;
+	gap: 3rem;
+}
+
+.required {
+	color: var(--red);
+	font-family: "lato", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+header, footer {
+	max-width: 1440px;
+	background-color: var(--med-blue);
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 2rem 1rem;
+	gap: 3rem;
+}
+
+header h1 a {
+	margin-left: 1rem;
+	font-family: 'cormorant-garamond', serif;
+	font-weight: 600;
+	font-size: 3rem;
+	color: var(--lt-gray);
+	text-decoration: none;
+	text-align: left;
+}
+
+nav {
+	margin: 0 3rem;
+}
+
+nav > ul {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 4rem;
+}
+
+nav > ul > li > a {
+	display: block;
+	width: 100%;
+	text-align: center;
+	background-color: var(--gold);
+	color: var(--dk-gray);
+	font-family: 'lato', sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 1.25rem;
+	padding: 0.8rem 1rem;
+	text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+	background-color: var(--lt-blue);
+}
+
+
+body {
+	max-width: 1440px;
+	margin: 0 auto;
+	font-family: 'lato', sans-serif;
+	font-style: normal;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	color: var(--dk-gray);
+}
+
+
+#intro {
+	padding: 7rem;
+	margin: 0 auto;
+	background-color: var(--lt-gray);
+}
+
+h2 {
+	font-family: 'cormorant-garamond', serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 2.125rem;
+	text-align: center;
+	margin-bottom: 2rem;
+
+}
+
+#intro > p {
+	display: block;
+	margin: 0 auto;
+	max-width: 75ch;
+}
+
+.highlight-div h3 {
+	font-family: 'cormorant-garamond', serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	line-height: 2rem;
+}
+
+#highlight1 {
+	margin: 4rem auto 2rem auto; 
+}
+
+#highlight2 {
+	margin: 2rem auto 4rem auto;
+}
+
+#contact-us {
+	margin: 4rem auto;
+	max-width: 710px;
+}
+
+#contact-us > div {
+	margin-bottom: 2rem;
+	padding: 0 100px;
+}
+
+#contact-us img {
+	display: block;
+	margin-bottom: 2rem;
+}
+
+
+/* Makes the form 2 columns */
+form {
+	display: flex;
+	justify-content: space-between;
+	gap: 5rem;
+}
+
+form > div {
+	flex: 1 1 0%;
+	min-width: 0%;
+}
+
+/* Groups label and field*/
+.form-group {
+	width: 100%;
+	margin: 10px 0;
+}
+
+.field-label {
+	display: block;
+	margin: 0 0 5px 0;
+	font-family: "lato", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 1rem;
+}
+
+.radio-label {
+	font-family: "lato", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1rem;
+}
+
+input[type="text"], textarea, fieldset {
+	width: 100%;
+}
+
+input[type="text"], input[type="tel"], textarea {
+	border: solid 2px var(--med-blue);
+	padding: 12px;
+	border-radius: 0;
+}
+
+input[type="text"]:focus, input[type="tel"]:focus, textarea:focus {
+	background-color: var(--lt-gray);
+	border-radius: 0;
+	/* Remove Chrome rounded corners in UA stylesheet */
+	outline: none;
+	box-shadow: none;
+}
+
+input[type="text"]:invalid, input[type="tel"]:invalid, textarea:invalid {
+	border: solid 3px var(--red);
+}
+
+input[type="radio"] {
+	appearance: none;
+	margin: 0;
+}
+
+input[type="radio"] + label {
+	cursor: pointer;
+}
+
+input[type="radio"] + label::before {
+	content: "\00a0";
+	border-radius: 20px;
+	display: inline-block;
+	width: 1.7em;
+	height: 1.7em;
+	text-align: center;
+	line-height: 1em;
+	font-size: 0.8em;
+	margin-right: 10px;
+	background-color: var(--white);
+	border: solid 3px var(--med-blue);
+}
+
+input[type="radio"]:checked + label::before {
+	content: "\00a0";
+	border-radius: 20px;
+	display: inline-block;
+	width: 1.7em;
+	height: 1.7em;
+	text-align: center;
+	line-height: 1em;
+	font-size: 0.8em;
+	margin-right: 10px;
+	background-color: var(--white);
+	border: solid 3px var(--med-blue);
+}
+
+input[type="radio"]:checked + label::before {
+   content: "\2022";
+   color: var(--white);
+   background-color: var(--med-blue);
+}
+
+fieldset {
+	display: flex;
+	justify-content: flex-start;
+	gap: 3rem;
+	border: solid 1px var(--med-blue);
+	padding: 20px;
+}
+
+legend {
+	font-family: "lato", sans-serif;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 1rem;
+	background-color: white;
+	padding: 0 10px;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+	margin-top: 10px;
+	text-align: center;
+	background-color: var(--gold);
+	color: var(--dk-gray);
+	font-family: 'lato', sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 20px;
+	padding: 0.5rem 2rem;
+	text-decoration: none;
+	border: none;
+}
+
+input[type="submit"]:hover {
+	background-color: var(--lt-blue);
+}
+
+footer {
+	padding: 2rem 0;
+}
+
+footer p {
+	text-align: center;
+	color: var(--lt-gray);
+	font-size: 1rem;
+}
+

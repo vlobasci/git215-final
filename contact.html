@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Vincent Lobascio">
+    <meta name="description" content="Get in touch with Alpenglow Retreat to plan your perfect Swiss Alps getaway. Our team is ready to answer your questions and help customize your stay.">
+    <title>Alpenglow Retreat | Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/pcj0rjk.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Alpenglow Retreat</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Accommodations</a></li>
+                <li><a href="contact.html" class="active-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <img src="images/swiss-valley.jpg" class="hero" width="1440" height="560" alt="a beautiful view of a lush alpine valley in the Swiss Alps with a river running down the center">
+        <section id="contact-us">
+            <h2>Contact Us</h2>
+            <div>
+                <p>Please reach out to us with any questions or concerns.<br> We are happy to help you plan your dream vacation with us!</p>
+                <p class="bold">Required fields marked with a <span class="required">*</span></p>
+            </div>
+            <img src="images/swiss-sunset.jpg" width="710" height="270" alt="A tranquil lake reflecting alpine trees and village houses at sunset, with the Swiss Alps rising in the background and clouds glowing pink and orange above the mountain peaks.">
+            <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+                <div id="form-left">
+                    <div class="form-group">
+                        <label for="fullname" class="field-label">Full Name<span class="required">*</span></label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="field-label">Email Address<span class="required">*</span></label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phonenumber" class="field-label">Phone Number<span class="required">*</span></label>
+                        <input type="tel" id="phonenumber" name="phonenumber" required>
+                    </div>
+                </div>
+
+                <div id="form-right">
+                    <div class="form-group">
+                        <fieldset>
+                            <legend>Preferred Contact Method<span class="required">*</span></legend>
+                            <div class="radio-group">
+                                <input type="radio" id="prefer-email" name="contact-method" value="email" required>
+                                <label for="prefer-email" class="radio-label">Email</label>
+                            </div>
+
+                            <div class="radio-group">
+                                <input type="radio" id="prefer-phone" name="contact-method" value="phone" required>
+                                <label for="prefer-phone" class="radio-label">Phone</label>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments" class="field-label">Comments<span class="required">*</span></label>
+                        <textarea id="comments" class="field-label" name="comments" required></textarea>
+                    </div>
+
+                    <input type="submit" value="submit">
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Alpenglow Resort</p>
+        <p>This site is for educational purposes only</p>
+    </footer>
+</body>
